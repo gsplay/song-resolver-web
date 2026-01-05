@@ -96,8 +96,9 @@
 
       try {
         const res = await fetch(
-          `https://api.song.link/v1-alpha.1/links?userCountry=AR&url=${encodeURIComponent(spotifyUrl)}`
-        );
+  		`	https://song-resolver-api.gabrielges.workers.dev/odesli?url=$				{encodeURIComponent(spotifyUrl)}`
+		);
+
 
         if (!res.ok) throw new Error("Odesli no respondió");
 
